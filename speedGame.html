@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Speed Game</title>
+  <link rel="stylesheet" href="speedGame.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <h1>Speed Game</h1>
+  </header>
+
+
+  <main>
+    <div class="display">
+      <p id="score">0</p>
+    </div>
+
+
+    <div class="container">
+
+      <div class="ball one" id="button0"></div>
+      <div class="ball two" id="button1"> </div>
+      <div class="ball three" id="button2"> </div>
+      <div class="ball four" id="button3"> </div>
+
+
+    </div>
+    <div id="win">
+      <p id="gameover"></p>
+      <div id="close" onclick="window.location.reload()">
+        Close</div>
+    </div>
+    <div class="popup">
+      <h3>you fucked up!</h3>
+      <button type="button" name="button" onclick="window.location.reload()"></button>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="buttons">
+      <button type="button" class="first" name="button" onclick="pickNext()">Start Game</button>
+      <button type="button" class="second" name="button" onclick="gameOver()">End Game</button>
+
+    </div>
+    <script src="speedGame.js"></script>
+
+
+
+  </footer>
+
+</body>
+
+</html>
